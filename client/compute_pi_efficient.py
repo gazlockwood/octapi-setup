@@ -78,7 +78,7 @@ if __name__ == '__main__':
 
     no_of_points = args.no_of_points
     no_of_jobs = args.no_of_jobs
-    server_nodes ='192.168.1.*'
+    server_nodes ='172.16.0.*'
 
     # use Condition variable to protect access to pending_jobs, as
     # 'job_callback' is executed in another thread

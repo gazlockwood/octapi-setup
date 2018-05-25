@@ -49,7 +49,7 @@ if __name__ == '__main__':
 
     no_of_points = args.no_of_points
     no_of_jobs = args.no_of_jobs
-    server_nodes ='192.168.1.*'
+    server_nodes ='172.16.0.*'
 
     cluster = dispy.JobCluster(compute, nodes=server_nodes)
     print(('submitting %i jobs of %i points each to %s' % (no_of_jobs, no_of_points, server_nodes)))

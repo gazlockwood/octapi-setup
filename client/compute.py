@@ -29,7 +29,7 @@ def compute(n):
 
 if __name__ == '__main__':
     import dispy, random
-    cluster = dispy.JobCluster(compute, nodes='192.168.1.*')
+    cluster = dispy.JobCluster(compute, nodes='172.16.0.*')
     jobs = []
     for i in range(16):
         # schedule execution of 'compute' on a node (running 'dispynode')

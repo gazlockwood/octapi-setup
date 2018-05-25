@@ -32,7 +32,7 @@ if [ -e "ip_list" ]; then
 else
     # discover all IPs on this network
     echo "obtaining IPs on this network and generating new ip_list..." 
-    nmap -sP 192.168.1.* | grep 'report for' | awk -F' ' '{print $5}' > /home/pi/ip_list
+    nmap -sP 172.16.0.* | grep 'report for' | awk -F' ' '{print $5}' > /home/pi/ip_list
 fi
 
 # for each active IP that is not the router or the client
